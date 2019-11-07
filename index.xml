@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Owlz&#39;s nest</title>
+    <link>owlz.github.io/</link>
+    <description>Recent content on Owlz&#39;s nest</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Anything here is under MIT license.</copyright>
+    <lastBuildDate>Thu, 07 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="owlz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About me</title>
+      <link>owlz.github.io/about/</link>
+      <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>owlz.github.io/about/</guid>
+      <description>Hi, I am Luca Di Luccio. Nice to meet you!
+I am currently studying computer science in Italy at the &amp;ldquo;Università degli Studi di Salerno&amp;rdquo;, my master degree curriculum is &amp;ldquo;Internet of Things&amp;rdquo;. I love talking and working on exciting and cutting edge projects. Contact me if you think I can help you!
+Sometimes i write articles about things that really matter to me such as: - Functional Programming - ?</description>
+    </item>
+    
+  </channel>
+</rss>
