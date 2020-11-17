@@ -1,0 +1,15 @@
+# The URL the site will be built for
+base_url = "https://owlz.github.io/"
+
+theme = "oceanic-zen"
+title = "Blog name"
+description = "Personal blog"
+compile_sass = true
+highlight_code = true
+highlight_theme = "visual-studio-dark"
+build_search_index = false
+
+[extra]
+author = "Luca"
+github = "Owlz"
+twitter = "NOTWITLOL"
