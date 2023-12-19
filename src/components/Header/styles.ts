@@ -4,6 +4,12 @@ import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
   padding: 1rem 0.5rem;
+  position: absolute;
+  width: 100vw;
+
+  top: 0px;
+  background-color: white;
+  opacity: 0.5;
 
   .ant-row-space-between {
     align-items: center;
