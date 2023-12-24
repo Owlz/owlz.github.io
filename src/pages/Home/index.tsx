@@ -1,4 +1,5 @@
 import { lazy } from "react";
+import Header from "../../components/Header";
 
 import IntroContent from "../../content/IntroContent.json";
 import MiddleBlockContent from "../../content/MiddleBlockContent.json";
@@ -16,8 +17,10 @@ const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 const FullscreenBlock = lazy(() => import("../../components/FullscreenBlock"));
 
 const Home = () => {
+
   return (
     <>
+      <Header />
       <FullscreenBlock {...FullscreenContent} />
       <Container>
         <ScrollToTop />

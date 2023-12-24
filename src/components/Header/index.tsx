@@ -17,24 +17,17 @@ import {
 } from "./styles";
 
 const Header = ({ t }: any) => {
-  const [visible, setVisibility] = useState(false);
-
-  const showDrawer = () => {
-    setVisibility(!visible);
-  };
-
-  const onClose = () => {
-    setVisibility(!visible);
-  };
-
-  const MenuItem = () => {
+  const [isDrawerVisible, setDrawerVisibility] = useState(false);
+  
+  const MenuItems = () => {
     const scrollTo = (id: string) => {
       const element = document.getElementById(id) as HTMLDivElement;
       element.scrollIntoView({
         behavior: "smooth",
       });
-      setVisibility(false);
+      setDrawerVisibility(false);
     };
+
     return (
       <>
         <CustomNavLinkSmall onClick={() => scrollTo("about")}>
@@ -66,15 +59,15 @@ const Header = ({ t }: any) => {
             <SvgIcon src="logo.svg" width="101px" height="64px" />
           </LogoContainer>
           <NotHidden>
-            <MenuItem />
+            <MenuItems />
           </NotHidden>
-          <Burger onClick={showDrawer}>
+          <Burger onClick={() => setDrawerVisibility(!isDrawerVisible)}>
             <Outline />
           </Burger>
         </Row>
-        <Drawer closable={false} visible={visible} onClose={onClose}>
+        <Drawer closable={false} visible={isDrawerVisible} onClose={() => setDrawerVisibility(!isDrawerVisible)}>
           <Col style={{ marginBottom: "2.5rem" }}>
-            <Label onClick={onClose}>
+            <Label onClick={() => setDrawerVisibility(!isDrawerVisible)}>
               <Col span={12}>
                 <Menu>Menu</Menu>
               </Col>
@@ -83,7 +76,7 @@ const Header = ({ t }: any) => {
               </Col>
             </Label>
           </Col>
-          <MenuItem />
+          <MenuItems />
         </Drawer>
       </Container>
     </HeaderSection>
